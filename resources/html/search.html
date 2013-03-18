@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/search.css">
+</head>
+<body>
+  <input type="text" id="search" placeholder="search (ie. ruby on rails)">
+  <a class="clear" id="clearQuery" href="#">
+    <span class="clear-button">&times;</span>
+  </a>
+  <input type="text" id="location" placeholder="location">
+  <a id="update-location" href="myapp://update-location"><img src="../arrow-dark.png" alt=""></a>
+
+  <input type="submit" id="search-btn" value="Search Jobs">
+  <input type="submit" id="save-btn" value="Save Search">
+  <div id="copy">
+    <p>Search results will be displayed in the main window after submitting the search form.</p>
+    <p>You can access your <strong>saved</strong> &amp; <strong>recent</strong> searches in the menu to the left of the main window.</p>
+  </div>
+
+  <script src="js/components/sugar/release/sugar-full.min.js"></script>
+  <script src="js/components/jquery/jquery.js"></script>
+  <script src="js/search.js"></script>
+</body>
+</html>

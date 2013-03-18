@@ -1,0 +1,7 @@
+ALWAYS_SEARCH_USER_PATHS = YES
+HEADER_SEARCH_PATHS = ${PODS_HEADERS_SEARCH_PATHS}
+OTHER_LDFLAGS = -ObjC -framework CoreGraphics -framework QuartzCore -framework SystemConfiguration
+PODS_BUILD_HEADERS_SEARCH_PATHS = "${PODS_ROOT}/BuildHeaders" "${PODS_ROOT}/BuildHeaders/JASidePanels" "${PODS_ROOT}/BuildHeaders/PHFRefreshControl" "${PODS_ROOT}/BuildHeaders/SCNetworkReachability" "${PODS_ROOT}/BuildHeaders/SKBounceAnimation" "${PODS_ROOT}/BuildHeaders/TDBadgedCell" "${PODS_ROOT}/BuildHeaders/ZAActivityBar"
+PODS_HEADERS_SEARCH_PATHS = ${PODS_PUBLIC_HEADERS_SEARCH_PATHS}
+PODS_PUBLIC_HEADERS_SEARCH_PATHS = "${PODS_ROOT}/Headers" "${PODS_ROOT}/Headers/JASidePanels" "${PODS_ROOT}/Headers/PHFRefreshControl" "${PODS_ROOT}/Headers/SCNetworkReachability" "${PODS_ROOT}/Headers/SKBounceAnimation" "${PODS_ROOT}/Headers/TDBadgedCell" "${PODS_ROOT}/Headers/ZAActivityBar"
+PODS_ROOT = ${SRCROOT}/Pods

@@ -1,0 +1,98 @@
+@import "main";
+
+body {
+  margin-left:84px;
+}
+
+input[type='text'] {
+  display:block;
+  box-sizing: border-box;
+  width:220px;
+  margin-bottom:10px;
+  padding:7px;
+  padding-left: 28px;
+  font-size:12px;
+  border:1px solid #bbb;
+  background-color:white;
+  @include box-shadow(1px 1px 1px rgba(0,0,0,0.1));
+}
+
+#copy {
+  width:220px;
+}
+
+input[type='submit'] {
+  clear:both;
+  display:block;
+  @include button(simple, #555);
+  width:220px;
+  font-weight:normal;
+  font-family:'Avenir-Heavy';
+  font-size:16px;
+  text-transform: uppercase;
+}
+
+#search-btn {
+  margin-bottom:6px;
+  clear:both;
+  display:block !important;
+  @include button(simple, #00b4db);
+  width:220px;
+  font-weight:normal;
+  font-family:'Avenir-Heavy';
+  font-size:16px;
+  text-transform: uppercase;
+}
+
+.checkbox {
+  margin-bottom:8px;
+  text-shadow:0 1px 0 white;
+  font-size:13px;
+  color:#666;
+}
+
+.clear-button {
+  background-color:rgba(0,0,0,0.3);
+  border-radius: 30px;
+  border: 0;
+  padding:1px 4px;
+  padding-bottom:0;
+  padding-left:5px;
+  color:white;
+  text-shadow:0 -1px 0 rgba(0,0,0,0.6);
+  position: absolute;
+  font-family: arial;
+  font-weight:bold;
+  top: 21px;
+  left: 280px;
+}
+
+#update-location {
+  position:absolute;
+  left:274px;
+  top:56px;
+  border:none;
+  text-decoration: none;
+  display:inline-block;
+  font-weight:normal;
+  font-family:'Avenir-Heavy';
+  padding:0 6px;
+  padding-top:6px;
+  background-color:rgba(0,0,0,0.2);
+  @include linear-gradient(#00b4db, #006d8e);
+  @include box-shadow(inset 1px 1px 1px rgba(255,255,255,0.4));
+  border:1px solid #0c78a0;
+  border-radius: 4px;
+  img {
+    width:15px;
+  }
+}
+
+#search {
+  background: white url(../../search.png) 5px 4px no-repeat;
+}
+#location {
+  background: white url(../../location.png) 8px 5px no-repeat;
+  width:184px;
+  display:block;
+}

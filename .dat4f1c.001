@@ -1,0 +1,69 @@
+exit
+Search.all
+Search.all.count
+Search.all
+Search.all.first
+Search.all.first.delete
+Search.all.first
+Search.destroy_all
+Search.all
+Search.all
+Search.all.first.id
+Search.all.first.id
+exit
+@searches = Search.where(:saved).eq(false).all
+@searches
+@searches[]
+@searches[0]
+@searches[0].id
+@searches[0][:search]
+@searches[0].search
+exit
+exit
+exit
+Search.all
+exit
+exit
+exit
+rake
+exit
+exit
+exit
+exit
+exit
+exit
+exot
+exit
+exit5
+exit
+date
+Date
+Time.now
+exit
+exit
+exit
+exit
+exit
+exit
+exit
+Search.find { |search| search.search =~ 'php' }
+Search.find { |search| search.search =~ /php/i }
+Search.find { |search| search.search =~ /php/i }.length
+Search.where(:location).eq('toronto')
+Search.where(:location).eq('toronto').where(:search).eq('php')
+Search.where(:location).eq('toronto').where(:search).eq('php').save
+Search.where(:location).eq('toronto').where(:search).eq('php').collect(&save)
+Search.where(:location).eq('toronto').where(:search).eq('php').collect()
+Search.where(:location).eq('toronto').where(:search).eq('php').map
+Search.where(:location).eq('toronto').where(:search).eq('php').methods
+Search.where(:location).eq('toronto').where(:search).eq('php').class
+Search.where(:location).eq('toronto').where(:search).eq('php').all
+Search.where(:location).eq('toronto').where(:search).eq('php').all.map
+Search.where(:location).eq('toronto').where(:search).eq('php').all.collect(&save)
+Search.where(:location).eq('toronto').where(:search).eq('php').all.collect {|s| s.save}
+Search.where(:location).eq('toronto').where(:search).eq('php').all
+Search.destroy_all
+Search.where(:location).eq('toronto').where(:search).eq('php')
+Search.where(:location).eq('toronto').where(:search).eq('php') == tru
+Search.where(:location).eq('toronto').where(:search).eq('php') == true
+Search.where(:location).eq('toronto').where(:search).eq('php') == false

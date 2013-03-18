@@ -1,0 +1,624 @@
+<?xml version='1.0'?>
+<signatures version='1.0'>
+<enum value='0.0f' name='BOTTOM_OFFSET'/>
+<enum value='40.0f' name='HEIGHT'/>
+<enum value='8' name='ICON_OFFSET'/>
+<enum value='1' name='JASidePanelCenterVisible'/>
+<enum value='2' name='JASidePanelLeftVisible'/>
+<enum value='1' name='JASidePanelMultipleActive'/>
+<enum value='3' name='JASidePanelRightVisible'/>
+<enum value='0' name='JASidePanelSingleActive'/>
+<enum value='10.0f' name='PADDING'/>
+<enum value='0' name='SCNetworkStatusNotReachable'/>
+<enum value='2' name='SCNetworkStatusReachableViaCellular'/>
+<enum value='1' name='SCNetworkStatusReachableViaWiFi'/>
+<enum value='24.0f' name='SPINNER_SIZE'/>
+<class name='JASidePanelController'>
+<method selector='allowLeftOverpan'>
+<retval declared_type='BOOL' type='B'/>
+</method>
+<method selector='allowLeftSwipe'>
+<retval declared_type='BOOL' type='B'/>
+</method>
+<method selector='allowRightOverpan'>
+<retval declared_type='BOOL' type='B'/>
+</method>
+<method selector='allowRightSwipe'>
+<retval declared_type='BOOL' type='B'/>
+</method>
+<method selector='bounceDuration'>
+<retval declared_type='CGFloat' type='f'/>
+</method>
+<method selector='bounceOnSidePanelClose'>
+<retval declared_type='BOOL' type='B'/>
+</method>
+<method selector='bounceOnSidePanelOpen'>
+<retval declared_type='BOOL' type='B'/>
+</method>
+<method selector='bouncePercentage'>
+<retval declared_type='CGFloat' type='f'/>
+</method>
+<method selector='canUnloadLeftPanel'>
+<retval declared_type='BOOL' type='B'/>
+</method>
+<method selector='canUnloadRightPanel'>
+<retval declared_type='BOOL' type='B'/>
+</method>
+<method selector='centerPanel'>
+<retval declared_type='UIViewController*' type='@'/>
+</method>
+<method selector='centerPanelContainer'>
+<retval declared_type='UIView*' type='@'/>
+</method>
+<method selector='centerPanelHidden'>
+<retval declared_type='BOOL' type='B'/>
+</method>
+<method selector='defaultImage' class_method='true'>
+<retval declared_type='UIImage*' type='@'/>
+</method>
+<method selector='leftButtonForCenterPanel'>
+<retval declared_type='UIBarButtonItem*' type='@'/>
+</method>
+<method selector='leftFixedWidth'>
+<retval declared_type='CGFloat' type='f'/>
+</method>
+<method selector='leftGapPercentage'>
+<retval declared_type='CGFloat' type='f'/>
+</method>
+<method selector='leftPanel'>
+<retval declared_type='UIViewController*' type='@'/>
+</method>
+<method selector='leftPanelContainer'>
+<retval declared_type='UIView*' type='@'/>
+</method>
+<method selector='leftVisibleWidth'>
+<retval declared_type='CGFloat' type='f'/>
+</method>
+<method selector='maximumAnimationDuration'>
+<retval declared_type='CGFloat' type='f'/>
+</method>
+<method selector='minimumMovePercentage'>
+<retval declared_type='CGFloat' type='f'/>
+</method>
+<method selector='panningLimitedToTopViewController'>
+<retval declared_type='BOOL' type='B'/>
+</method>
+<method selector='recognizesPanGesture'>
+<retval declared_type='BOOL' type='B'/>
+</method>
+<method selector='rightFixedWidth'>
+<retval declared_type='CGFloat' type='f'/>
+</method>
+<method selector='rightGapPercentage'>
+<retval declared_type='CGFloat' type='f'/>
+</method>
+<method selector='rightPanel'>
+<retval declared_type='UIViewController*' type='@'/>
+</method>
+<method selector='rightPanelContainer'>
+<retval declared_type='UIView*' type='@'/>
+</method>
+<method selector='rightVisibleWidth'>
+<retval declared_type='CGFloat' type='f'/>
+</method>
+<method selector='setAllowLeftOverpan:'>
+<arg declared_type='BOOL' index='0' type='B' name='allowLeftOverpan'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setAllowLeftSwipe:'>
+<arg declared_type='BOOL' index='0' type='B' name='allowLeftSwipe'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setAllowRightOverpan:'>
+<arg declared_type='BOOL' index='0' type='B' name='allowRightOverpan'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setAllowRightSwipe:'>
+<arg declared_type='BOOL' index='0' type='B' name='allowRightSwipe'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setBounceDuration:'>
+<arg declared_type='CGFloat' index='0' type='f' name='bounceDuration'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setBounceOnSidePanelClose:'>
+<arg declared_type='BOOL' index='0' type='B' name='bounceOnSidePanelClose'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setBounceOnSidePanelOpen:'>
+<arg declared_type='BOOL' index='0' type='B' name='bounceOnSidePanelOpen'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setBouncePercentage:'>
+<arg declared_type='CGFloat' index='0' type='f' name='bouncePercentage'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setCanUnloadLeftPanel:'>
+<arg declared_type='BOOL' index='0' type='B' name='canUnloadLeftPanel'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setCanUnloadRightPanel:'>
+<arg declared_type='BOOL' index='0' type='B' name='canUnloadRightPanel'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setCenterPanel:'>
+<arg declared_type='UIViewController*' index='0' type='@' name='centerPanel'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setCenterPanelContainer:'>
+<arg declared_type='UIView*' index='0' type='@' name='centerPanelContainer'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setCenterPanelHidden:'>
+<arg declared_type='BOOL' index='0' type='B' name='centerPanelHidden'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setCenterPanelHidden:animated:duration:'>
+<arg declared_type='BOOL' index='0' type='B' name='centerPanelHidden'/>
+<arg declared_type='BOOL' index='1' type='B' name='animated'/>
+<arg declared_type='NSTimeInterval' index='2' type='d' name='duration'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setLeftFixedWidth:'>
+<arg declared_type='CGFloat' index='0' type='f' name='leftFixedWidth'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setLeftGapPercentage:'>
+<arg declared_type='CGFloat' index='0' type='f' name='leftGapPercentage'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setLeftPanel:'>
+<arg declared_type='UIViewController*' index='0' type='@' name='leftPanel'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setLeftPanelContainer:'>
+<arg declared_type='UIView*' index='0' type='@' name='leftPanelContainer'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setMaximumAnimationDuration:'>
+<arg declared_type='CGFloat' index='0' type='f' name='maximumAnimationDuration'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setMinimumMovePercentage:'>
+<arg declared_type='CGFloat' index='0' type='f' name='minimumMovePercentage'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setPanningLimitedToTopViewController:'>
+<arg declared_type='BOOL' index='0' type='B' name='panningLimitedToTopViewController'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setRecognizesPanGesture:'>
+<arg declared_type='BOOL' index='0' type='B' name='recognizesPanGesture'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setRightFixedWidth:'>
+<arg declared_type='CGFloat' index='0' type='f' name='rightFixedWidth'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setRightGapPercentage:'>
+<arg declared_type='CGFloat' index='0' type='f' name='rightGapPercentage'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setRightPanel:'>
+<arg declared_type='UIViewController*' index='0' type='@' name='rightPanel'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setRightPanelContainer:'>
+<arg declared_type='UIView*' index='0' type='@' name='rightPanelContainer'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setShouldDelegateAutorotateToVisiblePanel:'>
+<arg declared_type='BOOL' index='0' type='B' name='shouldDelegateAutorotateToVisiblePanel'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setShouldResizeLeftPanel:'>
+<arg declared_type='BOOL' index='0' type='B' name='shouldResizeLeftPanel'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setShouldResizeRightPanel:'>
+<arg declared_type='BOOL' index='0' type='B' name='shouldResizeRightPanel'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setStyle:'>
+<arg declared_type='JASidePanelStyle' index='0' type='i' name='style'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setVisiblePanel:'>
+<arg declared_type='UIViewController*' index='0' type='@' name='visiblePanel'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='shouldDelegateAutorotateToVisiblePanel'>
+<retval declared_type='BOOL' type='B'/>
+</method>
+<method selector='shouldResizeLeftPanel'>
+<retval declared_type='BOOL' type='B'/>
+</method>
+<method selector='shouldResizeRightPanel'>
+<retval declared_type='BOOL' type='B'/>
+</method>
+<method selector='showCenterPanel:'>
+<arg declared_type='BOOL' index='0' type='B' name='animated'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='showCenterPanelAnimated:'>
+<arg declared_type='BOOL' index='0' type='B' name='animated'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='showLeftPanel:'>
+<arg declared_type='BOOL' index='0' type='B' name='animated'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='showLeftPanelAnimated:'>
+<arg declared_type='BOOL' index='0' type='B' name='animated'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='showRightPanel:'>
+<arg declared_type='BOOL' index='0' type='B' name='animated'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='showRightPanelAnimated:'>
+<arg declared_type='BOOL' index='0' type='B' name='animated'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='state'>
+<retval declared_type='JASidePanelState' type='i'/>
+</method>
+<method selector='style'>
+<retval declared_type='JASidePanelStyle' type='i'/>
+</method>
+<method selector='styleContainer:animate:duration:'>
+<arg declared_type='UIView*' index='0' type='@' name='container'/>
+<arg declared_type='BOOL' index='1' type='B' name='animate'/>
+<arg declared_type='NSTimeInterval' index='2' type='d' name='duration'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='stylePanel:'>
+<arg declared_type='UIView*' index='0' type='@' name='panel'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='toggleLeftPanel:'>
+<arg declared_type='id' index='0' type='@' name='sender'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='toggleRightPanel:'>
+<arg declared_type='id' index='0' type='@' name='sender'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='visiblePanel'>
+<retval declared_type='UIViewController*' type='@'/>
+</method>
+</class>
+<class name='NSObject'>
+<method selector='reachability:didFail:'>
+<arg declared_type='SCNetworkReachability*' index='0' type='@' name='reachability'/>
+<arg declared_type='NSError*' index='1' type='@' name='error'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='reachabilityDidChange:'>
+<arg declared_type='SCNetworkReachability*' index='0' type='@' name='reachability'/>
+<retval declared_type='void' type='v'/>
+</method>
+</class>
+<class name='PHFRefreshControl'>
+<method selector='beginRefreshing'>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='endRefreshing'>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='init'>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='isRefreshing'>
+<retval declared_type='BOOL' type='B'/>
+</method>
+<method selector='setTintColor:'>
+<arg declared_type='UIColor*' index='0' type='@' name='tintColor'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='tintColor'>
+<retval declared_type='UIColor*' type='@'/>
+</method>
+</class>
+<class name='SCNetworkReachability'>
+<method selector='checkReachability'>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='delegate'>
+<retval declared_type='NSObject*' type='@'/>
+</method>
+<method selector='initForLocalWiFi'>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='initWithHostAddress:'>
+<arg declared_type='struct sockaddr_in*' index='0' const='true' type='^{sockaddr_in=CCS{in_addr=I}[8c]}' name='hostAddress'/>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='initWithHostName:'>
+<arg declared_type='NSString*' index='0' type='@' name='hostName'/>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='reachabilityForLocalWiFi' class_method='true'>
+<retval declared_type='SCNetworkReachability*' type='@'/>
+</method>
+<method selector='reachabilityWithHostAddress:' class_method='true'>
+<arg declared_type='struct sockaddr_in*' index='0' const='true' type='^{sockaddr_in=CCS{in_addr=I}[8c]}' name='hostAddress'/>
+<retval declared_type='SCNetworkReachability*' type='@'/>
+</method>
+<method selector='reachabilityWithHostName:' class_method='true'>
+<arg declared_type='NSString*' index='0' type='@' name='hostName'/>
+<retval declared_type='SCNetworkReachability*' type='@'/>
+</method>
+<method selector='setDelegate:'>
+<arg declared_type='NSObject*' index='0' type='@' name='delegate'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='status'>
+<retval declared_type='SCNetworkStatus' type='i'/>
+</method>
+</class>
+<class name='SCNetworkReachabilityFlagsParser'>
+<method selector='checkReachabilityRefFlags:'>
+<arg declared_type='SCNetworkReachabilityRef' index='0' type='^{__SCNetworkReachability=}' name='reachabilityRef'/>
+<retval declared_type='BOOL' type='B'/>
+</method>
+<method selector='initWithReachabilityRef:'>
+<arg declared_type='SCNetworkReachabilityRef' index='0' type='^{__SCNetworkReachability=}' name='reachabilityRef'/>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='isCellular'>
+<retval declared_type='BOOL' type='B'/>
+</method>
+<method selector='isReachable'>
+<retval declared_type='BOOL' type='B'/>
+</method>
+</class>
+<class name='SCNetworkReachabilityRefCreator'>
+<method selector='newReachabilityRefForLocalWiFi' class_method='true'>
+<retval declared_type='SCNetworkReachabilityRef' type='^{__SCNetworkReachability=}'/>
+</method>
+<method selector='newReachabilityRefWithHostAddress:' class_method='true'>
+<arg declared_type='struct sockaddr_in*' index='0' const='true' type='^{sockaddr_in=CCS{in_addr=I}[8c]}' name='address'/>
+<retval declared_type='SCNetworkReachabilityRef' type='^{__SCNetworkReachability=}'/>
+</method>
+<method selector='newReachabilityRefWithHostName:' class_method='true'>
+<arg declared_type='NSString*' index='0' type='@' name='name'/>
+<retval declared_type='SCNetworkReachabilityRef' type='^{__SCNetworkReachability=}'/>
+</method>
+</class>
+<class name='SCNetworkReachabilityScheduler'>
+<method selector='scheduleReachability:withRef:' class_method='true'>
+<arg declared_type='SCNetworkReachability*' index='0' type='@' name='reachability'/>
+<arg declared_type='SCNetworkReachabilityRef' index='1' type='^{__SCNetworkReachability=}' name='ref'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='unscheduleReachabilityRef:' class_method='true'>
+<arg declared_type='SCNetworkReachabilityRef' index='0' type='^{__SCNetworkReachability=}' name='ref'/>
+<retval declared_type='void' type='v'/>
+</method>
+</class>
+<class name='SKBounceAnimation'>
+<method selector='animationWithKeyPath:' class_method='true'>
+<arg declared_type='NSString*' index='0' type='@' name='keyPath'/>
+<retval declared_type='SKBounceAnimation*' type='@'/>
+</method>
+<method selector='byValue'>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='fromValue'>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='numberOfBounces'>
+<retval declared_type='NSUInteger' type='I'/>
+</method>
+<method selector='setByValue:'>
+<arg declared_type='id' index='0' type='@' name='byValue'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setFromValue:'>
+<arg declared_type='id' index='0' type='@' name='fromValue'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setNumberOfBounces:'>
+<arg declared_type='NSUInteger' index='0' type='I' name='numberOfBounces'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setShake:'>
+<arg declared_type='BOOL' index='0' type='B' name='shake'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setShouldOvershoot:'>
+<arg declared_type='BOOL' index='0' type='B' name='shouldOvershoot'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setToValue:'>
+<arg declared_type='id' index='0' type='@' name='toValue'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='shake'>
+<retval declared_type='BOOL' type='B'/>
+</method>
+<method selector='shouldOvershoot'>
+<retval declared_type='BOOL' type='B'/>
+</method>
+<method selector='toValue'>
+<retval declared_type='id' type='@'/>
+</method>
+</class>
+<class name='TDBadgeView'>
+<method selector='badgeColor'>
+<retval declared_type='UIColor*' type='@'/>
+</method>
+<method selector='badgeColorHighlighted'>
+<retval declared_type='UIColor*' type='@'/>
+</method>
+<method selector='badgeString'>
+<retval declared_type='NSString*' type='@'/>
+</method>
+<method selector='badgeTextColor'>
+<retval declared_type='UIColor*' type='@'/>
+</method>
+<method selector='fontSize'>
+<retval declared_type='CGFloat' type='f'/>
+</method>
+<method selector='parent'>
+<retval declared_type='UITableViewCell*' type='@'/>
+</method>
+<method selector='radius'>
+<retval declared_type='CGFloat' type='f'/>
+</method>
+<method selector='setBadgeColor:'>
+<arg declared_type='UIColor*' index='0' type='@' name='badgeColor'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setBadgeColorHighlighted:'>
+<arg declared_type='UIColor*' index='0' type='@' name='badgeColorHighlighted'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setBadgeString:'>
+<arg declared_type='NSString*' index='0' type='@' name='badgeString'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setBadgeTextColor:'>
+<arg declared_type='UIColor*' index='0' type='@' name='badgeTextColor'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setFontSize:'>
+<arg declared_type='CGFloat' index='0' type='f' name='fontSize'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setParent:'>
+<arg declared_type='UITableViewCell*' index='0' type='@' name='parent'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setRadius:'>
+<arg declared_type='CGFloat' index='0' type='f' name='radius'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setShowShadow:'>
+<arg declared_type='BOOL' index='0' type='B' name='showShadow'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='showShadow'>
+<retval declared_type='BOOL' type='B'/>
+</method>
+<method selector='width'>
+<retval declared_type='NSUInteger' type='I'/>
+</method>
+</class>
+<class name='TDBadgedCell'>
+<method selector='badge'>
+<retval declared_type='TDBadgeView*' type='@'/>
+</method>
+<method selector='badgeColor'>
+<retval declared_type='UIColor*' type='@'/>
+</method>
+<method selector='badgeColorHighlighted'>
+<retval declared_type='UIColor*' type='@'/>
+</method>
+<method selector='badgeLeftOffset'>
+<retval declared_type='CGFloat' type='f'/>
+</method>
+<method selector='badgeRightOffset'>
+<retval declared_type='CGFloat' type='f'/>
+</method>
+<method selector='badgeString'>
+<retval declared_type='NSString*' type='@'/>
+</method>
+<method selector='badgeTextColor'>
+<retval declared_type='UIColor*' type='@'/>
+</method>
+<method selector='resizeableLabels'>
+<retval declared_type='NSMutableArray*' type='@'/>
+</method>
+<method selector='setBadgeColor:'>
+<arg declared_type='UIColor*' index='0' type='@' name='badgeColor'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setBadgeColorHighlighted:'>
+<arg declared_type='UIColor*' index='0' type='@' name='badgeColorHighlighted'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setBadgeLeftOffset:'>
+<arg declared_type='CGFloat' index='0' type='f' name='badgeLeftOffset'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setBadgeRightOffset:'>
+<arg declared_type='CGFloat' index='0' type='f' name='badgeRightOffset'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setBadgeString:'>
+<arg declared_type='NSString*' index='0' type='@' name='badgeString'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setBadgeTextColor:'>
+<arg declared_type='UIColor*' index='0' type='@' name='badgeTextColor'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setResizeableLabels:'>
+<arg declared_type='NSMutableArray*' index='0' type='@' name='resizeableLabels'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setShowShadow:'>
+<arg declared_type='BOOL' index='0' type='B' name='showShadow'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='showShadow'>
+<retval declared_type='BOOL' type='B'/>
+</method>
+</class>
+<class name='UIScrollView'>
+<method selector='refreshControl'>
+<retval declared_type='PHFRefreshControl*' type='@'/>
+</method>
+<method selector='setRefreshControl:'>
+<arg declared_type='PHFRefreshControl*' index='0' type='@' name='refreshControl'/>
+<retval declared_type='void' type='v'/>
+</method>
+</class>
+<class name='UIViewController'>
+<method selector='setSidePanelController:'>
+<arg declared_type='JASidePanelController*' index='0' type='@' name='sidePanelController'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='sidePanelController'>
+<retval declared_type='JASidePanelController*' type='@'/>
+</method>
+</class>
+<class name='ZAActivityBar'>
+<method selector='dismiss' class_method='true'>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='show' class_method='true'>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='showErrorWithStatus:' class_method='true'>
+<arg declared_type='NSString*' index='0' type='@' name='status'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='showImage:status:' class_method='true'>
+<arg declared_type='UIImage*' index='0' type='@' name='image'/>
+<arg declared_type='NSString*' index='1' type='@' name='status'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='showSuccessWithStatus:' class_method='true'>
+<arg declared_type='NSString*' index='0' type='@' name='status'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='showWithStatus:' class_method='true'>
+<arg declared_type='NSString*' index='0' type='@' name='status'/>
+<retval declared_type='void' type='v'/>
+</method>
+</class>
+<informal_protocol name='SCNetworkReachabilityDelegate'>
+<method selector='reachability:didFail:' type='v16@0:4@8@12'>
+<arg declared_type='SCNetworkReachability*' index='0' type='@' name='reachability'/>
+<arg declared_type='NSError*' index='1' type='@' name='error'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='reachabilityDidChange:' type='v12@0:4@8'>
+<arg declared_type='SCNetworkReachability*' index='0' type='@' name='reachability'/>
+<retval declared_type='void' type='v'/>
+</method>
+</informal_protocol>
+</signatures>
