@@ -37,7 +37,7 @@ class SearchViewController < UIViewController
       method   = matches[1]
       case method
       when 'search'
-        Search.create search: search, location: location, saved: false unless search.blank? && location.blank?
+        Search.create search: search, location: location, saved: 'f' unless search.blank? && location.blank?
         App.delegate.menuController.reloadData
         App.delegate.jobsController.loadData(search: search, location: location) {
           App.delegate.slideController.centerPanel = App.delegate.mainController
@@ -46,7 +46,7 @@ class SearchViewController < UIViewController
         if search.blank? && location.blank?
           UIAlertView.alert "Enter in a search term or location"
         else
-          Search.create search: search, location: location, saved: true
+          Search.create search: search, location: location, saved: 't'
           App.delegate.menuController.reloadData
           ZAActivityBar.showSuccessWithStatus('Search saved successfully')
         end

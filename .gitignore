@@ -14,3 +14,6 @@ nbproject
 .eprj
 .sass-cache
 .idea
+build.back
+.dat*
+vendor

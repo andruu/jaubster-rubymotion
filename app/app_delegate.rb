@@ -1,10 +1,12 @@
 class AppDelegate
   def application(application, didFinishLaunchingWithOptions:launchOptions)
 
+    NanoStore.shared_store = NanoStore.store(:file, App.documents_path + "/jaubster.db")
+
     # Reading file
     # p File.read('positions.json'.resource)
 
-    Search.deserialize_from_file('search.dat')
+    # Search.deserialize_from_file('search.dat')
 
     # ZAActivityBar.showErrorWithStatus('Internet connection is needed to search!') unless isConnected
 

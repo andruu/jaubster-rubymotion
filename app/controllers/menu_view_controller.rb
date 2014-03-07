@@ -17,13 +17,13 @@ class MenuViewController < UIViewController
         title: 'Saved Searches',
         icon: 'saved.png',
         controller: 'saved',
-        count: Search.where(:saved).eq(true).all.count
+        count: Search.find(saved: 't').count
       },
       {
         title: 'Recent Searches',
         icon: 'recent.png',
         controller: 'recent',
-        count: Search.where(:saved).eq(false).all.count
+        count: Search.find(saved: 'f').count
       },
       {
         title: 'Help',

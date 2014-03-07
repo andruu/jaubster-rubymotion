@@ -47,11 +47,11 @@ class JobsViewController < UIViewController
 
     @geoCoder = CLGeocoder.alloc.init
     @geoCoder.reverseGeocodeLocation(@location_manager.location, completionHandler:lambda { |placemarks, error|
-      return ZAActivityBar.showErrorWithStatus('Connection appears to be offline.') if placemarks.empty?
-      placemark = placemarks.first
-      if block_given
-        block.call(placemark)
-      end
+      # return ZAActivityBar.showErrorWithStatus('Connection appears to be offline.') if placemarks.empty?
+      # placemark = placemarks.first
+      # if block_given
+      #   block.call(placemark)
+      # end
     })
   end
 

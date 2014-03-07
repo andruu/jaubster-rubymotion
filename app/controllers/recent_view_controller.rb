@@ -23,7 +23,7 @@ class RecentViewController < UIViewController
 
   def viewWillAppear(animated)
     super
-    @searches = Search.where(:saved).eq(false).all
+    @searches = Search.find({saved: 'f'}, {sort: {created_at: :desc}})
     self.view.reloadData
   end
 
@@ -60,5 +60,9 @@ class RecentViewController < UIViewController
 
   def tableView(tableView, didSelectRowAtIndexPath:indexPath)
     tableView.deselectRowAtIndexPath(indexPath, animated: true)
+    row = @searches[indexPath.row]
+    App.delegate.jobsController.loadData(search: row.search, location: row.location) {
+      App.delegate.slideController.centerPanel = App.delegate.mainController
+    }
   end
 end

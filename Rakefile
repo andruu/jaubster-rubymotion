@@ -1,7 +1,8 @@
 # -*- coding: utf-8 -*-
 $:.unshift("/Library/RubyMotion/lib")
 
-require 'motion/project'
+# require 'motion/project'
+require 'motion/project/template/ios'
 require 'bundler'
 Bundler.setup
 Bundler.require
@@ -20,5 +21,6 @@ Motion::Project::App.setup do |app|
     pod 'PHFRefreshControl', '~> 1.0.0'
     pod 'ZAActivityBar', '~> 0.1.1'
     pod 'TDBadgedCell', '~> 2.1'
+    pod 'NanoStore', '~> 2.6.0'
   end
 end

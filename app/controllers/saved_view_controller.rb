@@ -23,12 +23,8 @@ class SavedViewController < UIViewController
 
   def viewWillAppear(animated)
     super
-    @searches = Search.where(:saved).eq(true).all
+    @searches = Search.find({saved: 't'}, {sort: {created_at: :desc}})
     self.view.reloadData
-  end
-
-  def reloadData
-    @table.reloadData if @table
   end
 
   def tableView(tableView, cellForRowAtIndexPath: indexPath)
@@ -64,5 +60,9 @@ class SavedViewController < UIViewController
 
   def tableView(tableView, didSelectRowAtIndexPath:indexPath)
     tableView.deselectRowAtIndexPath(indexPath, animated: true)
+    row = @searches[indexPath.row]
+    App.delegate.jobsController.loadData(search: row.search, location: row.location) {
+      App.delegate.slideController.centerPanel = App.delegate.mainController
+    }
   end
 end
